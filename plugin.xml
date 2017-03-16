@@ -6,7 +6,7 @@
     <name>RealTimeOCR</name>
 
     <js-module src="www/RealTimeOCR.js" name="RealTimeOCR">
-        <clobbers target="RealTimeOCR" />
+        <clobbers target="navigator.RealTimeOCR" />
     </js-module>
 
     <!-- ios -->
@@ -20,5 +20,5 @@
         <header-file src="src/ios/RealTimeOCR.h" />
         <source-file src="src/ios/RealTimeOCR.m" />
     </platform>
-
+    
 </plugin>

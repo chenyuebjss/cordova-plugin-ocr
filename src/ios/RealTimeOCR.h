@@ -10,4 +10,6 @@
 
 @interface RealTimeOCR : CDVPlugin
 
+- (void) showCameraViewController: (CDVInvokedUrlCommand *) command;
+
 @end
