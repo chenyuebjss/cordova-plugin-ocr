@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="cordova-plugin-realtimeocr"
+      version="0.0.1">
+    <name>RealTimeOCR</name>
+
+    <js-module src="www/RealTimeOCR.js" name="RealTimeOCR">
+        <clobbers target="RealTimeOCR" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+		    <feature name="RealTimeOCR">
+			    <param name="ios-package" value="RealTimeOCR"/>
+		    </feature>
+        </config-file>
+
+        <header-file src="src/ios/RealTimeOCR.h" />
+        <source-file src="src/ios/RealTimeOCR.m" />
+    </platform>
+
+</plugin>
