@@ -1,5 +1,5 @@
 var exec = require('cordova/exec')
 
-exports.showVC = function() {
+exports.showCameraViewController = function() {
   exec(null, null, "RealTimeOCR", "showCameraViewController", []);
 };

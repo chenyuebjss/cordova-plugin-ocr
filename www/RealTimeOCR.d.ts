@@ -1,7 +1,7 @@
 interface CordovaPlugins {
-  ocr: RealTimeOCR;
+  RealTimeOCR: RealTimeOCR;
 }
 
 interface RealTimeOCR {
-  showVC():void;
+  showCameraViewController():void;
 }
